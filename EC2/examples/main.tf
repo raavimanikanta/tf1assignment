@@ -8,7 +8,7 @@ module "Demo-users" {
   users-list=["demo-user1","demo-user2","demo-user3"]
   users-group="demo-usergroup-418"
   ami1= "ami-051dfed8f67f095f5"
-
+  ami2="ami-051dfed8f67f095f5"
 }
 
 

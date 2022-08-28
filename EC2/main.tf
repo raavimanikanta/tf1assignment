@@ -34,5 +34,15 @@ resource "aws_instance" "web" {
   }
 }
 
+resource "aws_instance" "web2" {
+  ami           = var.ami2
+  instance_type = "t2.micro"
+
+  tags = {
+    Name = "Demo-instance-418"
+    owner = "Manikanta"
+    purpose = "Training Tf"
+  }
+}
 
 
