@@ -5,6 +5,8 @@ name: My_terraform_example
 on:
   push:
     branches: ["master"]
+  workflow_dispatch:
+  
 
 jobs:
   terraform:
@@ -27,22 +29,23 @@ jobs:
     - name: Terraform Init
       id: init
       run: terraform init
-      
+      working-directory: "./EC2/example"
     - name: Terraform Format
       id: fmt
       run: terraform fmt -check 
-      
+      working-directory: "./EC2/example"
       
     - name: Terraform Validate
       id: validate
       run: terraform validate 
-      
+      working-directory: "./EC2/example"
     - name: Terraform Plan
       id: plan
       if: github.event_name == 'push'
       run: terraform plan 
-      
+      working-directory: "./EC2/example"
     
     
     - name: Terraform Apply
       run: terraform apply -auto-approve 
+      working-directory: "./EC2/example"
