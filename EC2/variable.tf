@@ -10,3 +10,4 @@ variable "users-group" {
 variable "ami1" {
   type=string
 }
+
