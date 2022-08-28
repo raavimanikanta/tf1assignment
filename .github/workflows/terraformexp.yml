@@ -30,15 +30,18 @@ jobs:
       id: init
       run: terraform init
       working-directory: "./EC2/examples"
+      
+      
     - name: Terraform Format
       id: fmt
-      run: terraform fmt -check 
+      run: terraform fmt 
       working-directory: "./EC2/examples"
       
     - name: Terraform Validate
       id: validate
       run: terraform validate 
       working-directory: "./EC2/examples"
+      
     - name: Terraform Plan
       id: plan
       if: github.event_name == 'push'
