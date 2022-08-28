@@ -11,9 +11,5 @@ module "Demo-users" {
 
 }
 
-module "adding_buckets" {
-  source="../../"
- 
-}
 
 
