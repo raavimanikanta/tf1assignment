@@ -53,3 +53,8 @@ jobs:
       if: steps.plan.outcome != 'failure'
       run: terraform apply -auto-approve
       working-directory: ${{env.working-directory}}
+      
+    - name: Terraform destroy 
+      id: destroy
+      run: terraform destroy -auto-approve
+      working-directory: ${{env.working-directory}}
