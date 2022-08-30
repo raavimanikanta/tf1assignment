@@ -9,6 +9,8 @@ module "Demo-users" {
   users-group="demo-usergroup-418"
   ami1= "ami-0568773882d492fc8"
   ami2= "ami-0568773882d492fc8"
+
+  
 }
 
 
