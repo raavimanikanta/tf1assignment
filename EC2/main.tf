@@ -28,7 +28,7 @@ resource "aws_instance" "web" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "Demo-instance-418"
+    Name = "Demo1-instance-418"
     owner = "Manikanta"
     purpose = "Training Tf"
   }
