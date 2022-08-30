@@ -6,8 +6,7 @@ env:
   working-directory: ./EC2/examples
 
 on:
-  push:
-    branches: ["main", "master"]
+
 
   workflow_dispatch:
 
