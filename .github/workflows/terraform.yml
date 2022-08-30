@@ -53,3 +53,5 @@ jobs:
       if: steps.plan.outcome != 'failure'
       run: terraform apply -auto-approve
       working-directory: ${{env.working-directory}}
+      
+  
